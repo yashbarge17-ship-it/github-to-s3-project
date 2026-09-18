@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yash Barge - Biodata</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 30%;
+        }
+
+        .download-btn {
+            display: block;
+            margin: 20px auto 30px;
+            padding: 12px 25px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #004c99;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            td {
+                padding: 8px;
+            }
+
+            td:first-child {
+                width: 40%;
+            }
+        }
+
+        /* Don't show download button in PDF */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .download-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="profile">
+            <h1>My Biodata</h1>
+        </div>
+
+        <!-- Download Biodata (PDF) Button -->
+        <button class="download-btn" onclick="downloadBiodata()">
+            Download Biodata (PDF)
+        </button>
+
+        <!-- Personal Information -->
+        <h2>Personal Information</h2>
+
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Yash Barge</td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td>Your Date of Birth</td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>Male</td>
+            </tr>
+
+            <tr>
+                <td>Nationality</td>
+                <td>Indian</td>
+            </tr>
+
+            <tr>
+                <td>Languages</td>
+                <td>English, Hindi, Marathi</td>
+            </tr>
+        </table>
+
+        <!-- Education -->
+        <h2>Education</h2>
+
+        <table>
+            <tr>
+                <td>Degree</td>
+                <td>BCS</td>
+            </tr>
+
+            <tr>
+                <td>Specialization</td>
+                <td>Computer Science</td>
+            </tr>
+
+            <tr>
+                <td>College</td>
+                <td>Your College Name</td>
+            </tr>
+        </table>
+
+        <!-- Technical Skills -->
+        <h2>Technical Skills</h2>
+
+        <table>
+            <tr>
+                <td>Networking</td>
+                <td>TCP/IP, OSI Model, Routing, Switching, VLAN</td>
+            </tr>
+
+            <tr>
+                <td>Cloud</td>
+                <td>AWS, Amazon S3, EC2</td>
+            </tr>
+
+            <tr>
+                <td>Programming</td>
+                <td>Python</td>
+            </tr>
+        </table>
+
+        <!-- Contact Information -->
+        <h2>Contact Information</h2>
+
+        <table>
+            <tr>
+                <td>Email</td>
+                <td>your-email@example.com</td>
+            </tr>
+
+            <tr>
+                <td>Mobile</td>
+                <td>+91 XXXXX XXXXX</td>
+            </tr>
+
+            <tr>
+                <td>Location</td>
+                <td>Maharashtra, India</td>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <p>© 2026 Yash Barge | My Biodata</p>
+        </div>
+
+    </div>
+
+    <script>
+        function downloadBiodata() {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>
